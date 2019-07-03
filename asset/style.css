@@ -1,0 +1,350 @@
+body {
+    font: 14px IRANSans;
+}
+head{
+    background-color: gainsboro;
+    height: 30px;
+}
+input
+{
+    border: 1px solid lightblue;
+    text-align:center;
+    border-radius: 5px;
+    padding: 10px;
+}
+table, th, td
+{
+    background:lightblue;
+    margin:25px auto;
+    font-size: 20px;
+}
+table, th, td
+{
+    border: 1px solid grey;
+    border-collapse: collapse;
+}
+th, td
+{
+    padding: 15px;
+}
+caption
+{
+    margin-bottom:15px;
+    color:#c82c74;
+}
+
+.logoarea img {
+    margin: 20px;
+}
+a:hover {
+    text-decoration: none
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: bold;
+    src: url('fonts/eot/IRANSansWeb_Bold.eot');
+    src: url('fonts/eot/IRANSansWeb_Bold.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/woff2/IRANSansWeb_Bold.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('fonts/woff/IRANSansWeb_Bold.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/IRANSansWeb_Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 500;
+    src: url('fonts/eot/IRANSansWeb_Medium.eot');
+    src: url('fonts/eot/IRANSansWeb_Medium.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/woff2/IRANSansWeb_Medium.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('fonts/woff/IRANSansWeb_Medium.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/IRANSansWeb_Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 300;
+    src: url('fonts/eot/IRANSansWeb_Light.eot');
+    src: url('fonts/eot/IRANSansWeb_Light.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/woff2/IRANSansWeb_Light.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('fonts/woff/IRANSansWeb_Light.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/IRANSansWeb_Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: 200;
+    src: url('fonts/eot/IRANSansWeb_UltraLight.eot');
+    src: url('fonts/eot/IRANSansWeb_UltraLight.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/woff2/IRANSansWeb_UltraLight.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('fonts/woff/IRANSansWeb_UltraLight.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/IRANSansWeb_UltraLight.ttf') format('truetype');
+}
+@font-face {
+    font-family: IRANSans;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/eot/IRANSansWeb.eot');
+    src: url('fonts/eot/IRANSansWeb.eot?#iefix') format('embedded-opentype'), /* IE6-8 */
+    url('fonts/woff2/IRANSansWeb.woff2') format('woff2'), /* FF39+,Chrome36+, Opera24+*/
+    url('fonts/woff/IRANSansWeb.woff') format('woff'), /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    url('fonts/ttf/IRANSansWeb.ttf') format('truetype');
+}
+.navbar-default {
+    background-color: #2196F3;
+    border: none;
+}
+.navbar-default .navbar-nav>li>a {
+    color: #fff
+}
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover {
+    background: #1770b7;
+    color: #fff
+}
+.navbar-default .navbar-nav>li>a:focus, .navbar-default .navbar-nav>li>a:hover {
+    background: #1770b7;
+    color: #fff;
+}
+.topmenu {
+    padding: 0px
+}
+.topmenu ul li {
+    position: relative;
+}
+.topmenu ul li:first-child a {
+    -webkit-border-top-right-radius: 3px;
+    -webkit-border-bottom-right-radius: 3px;
+    -moz-border-radius-topright: 3px;
+    -moz-border-radius-bottomright: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+.topmenu ul li ul {
+    display: none;
+    position: absolute;
+    list-style: none;
+    width: 145px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    padding-right: 0px;
+    z-index: 99;
+    background: #fff
+}
+.topmenu ul li:hover ul {
+    display: block
+}
+.topmenu ul li ul li a {
+    padding: 5px 15px;
+    display: block;
+    margin: 5px;
+    border-radius: 3px
+}
+.topmenu ul li ul li:hover a {
+    text-decoration: none;
+    background: #2196f3;
+    color: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.searcharea {
+    background: #1770b7;
+    padding: 0 15px;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.searcharea button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 22px;
+    outline: none;
+    margin: 9px 0 0 0;
+}
+.searcharea input {
+    background: none;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+.searcharea input::-webkit-input-placeholder {
+    color: #fff;
+}
+.navbar .container-fluid {
+    padding: 0px;
+}
+.widgetbox, .productbox {
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
+    margin: 0 0 15px 0;
+    float: left;
+
+}
+.widgetbox .headarea {
+    background: #eeeeee;
+    padding: 5px 10px
+}
+.widgetbox .contentarea {
+    padding: 5px
+}
+.newslist {
+    display: block;
+    margin: 10px 0
+}
+.newslist img {
+    float: right;
+    margin: 0 0 0 5px;
+    border-radius: 3px
+}
+.newslist h3 {
+    font-size: 16px;
+}
+.contentarea ul {
+    list-style: none;
+    padding: 0px
+}
+.contentarea ul li a {
+    padding: 5px;
+    display: block;
+    color: #353535;
+    border-radius: 3px;
+}
+.contentarea ul li:hover a {
+    text-decoration: none;
+    color: #fff;
+    background: #8bc34a;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.contentarea ul li a::before {
+    content: "●";
+    margin: 0 0 0 5px
+}
+.carousel-caption {
+    left: auto;
+    right: 100px;
+    text-align: right
+}
+.carousel-caption h3 {
+    font-weight: normal;
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 15px;
+    border-radius: 3px
+}
+.titlemain {
+    box-shadow: 0 2px 0 #eeeeee;
+    float: right;
+    width: 100%;
+    margin: 15px 0
+}
+.titlemain h4 {
+    padding: 15px 5px;
+    box-shadow: 0 2px 0 #2196f3;
+    float: right;
+    margin: 0px;
+    font-weight: normal
+}
+.productbox img {
+    display: block;
+    margin: 15px auto
+}
+.productbox h2 {
+    font-size: 18px;
+    width: 90%;
+    margin: auto;
+    height: 60px;
+    line-height: 30px;
+    color: #000;
+    overflow: hidden
+}
+.productbox span {
+    color: rgba(0, 0, 0, 0.5);
+    padding: 15px
+}
+.productbox a.add_to_cart {
+    width: 100%;
+    color: #8bc34a;
+    font-size: 18px;
+    padding: 5px;
+    display: block;
+    text-align: center;
+    margin: 10px 0 0 0
+}
+.productbox:hover a.add_to_cart {
+    background: #8bc34a;
+    color: #fff;
+    text-decoration: none
+}
+.moreproduct a{
+    color:#2196f3 ;
+    border:2px solid #2196f3;
+    border-radius: 3px;
+    font-size: 18px ;
+    text-align: center;
+    display: block;
+    padding:10px 0;
+    margin:15px ;
+}
+.moreproduct a:hover{
+    color:#fff ;
+    border:2px solid #2196f3;
+    background: #2196f3
+}
+.footerarea {
+    background:#455a64;
+    width: 100%;
+    padding: 15px 0 0 0 ;
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+.widgetfooter {
+    padding:0 15px ;
+
+}
+.widfoothead h3 {
+    font-size: 18px;
+    color: #fff;
+    box-shadow: 0px 2px 0 #fff;
+    padding:10px 0;
+}
+.widfootcontent ul {
+    list-style: none;
+    padding: 0px
+}
+.widfootcontent ul li a {
+    padding: 5px;
+    display: block;
+    color: #fff;
+    border-radius: 3px;
+}
+.widfootcontent ul li:hover a {
+    text-decoration: none;
+    color: #fff;
+    background: #8bc34a;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+.widfootcontent ul li a::before {
+    content: "●";
+    margin: 0 0 0 5px
+}
+.copyrightfooter {
+    background: #34434b ;
+    width: 100% ; padding:15px;
+    color:#fff;
+}
+.copyrightfooter a {color:#fff}
+.socialsfooter {text-align: left;
+}
+.socialsfooter a { padding:4px 10px ; border-radius: 3px;}
+.socialsfooter a:hover { background:#55acee}
+
+
+
+
+
