@@ -66,7 +66,9 @@ include_once 'template/head.php';
             </div>
         </div>
         <div class="col-xs-12 col-lg-3 pull-right">
-
+            <?php
+            include_once 'template/register.php'
+            ?>
             <div class="widgetbox">
                 <div class="headarea">
                     <h4>دسته ها</h4></div>
