@@ -5,6 +5,9 @@ class Grid
     private $column;
     private $table;
     private $url;
+    private $actions;
+    private $query;
+
 
     public function setColumens(array $data)
     {
@@ -43,6 +46,12 @@ class Grid
         }
     }
 
+    public function setAction($action)
+    {
+        $this->actions=$action;
+        return $this;
+    }
+
     private function makeData($data)
     {
         $columns=$this->column;
@@ -70,11 +79,7 @@ class Grid
                     $html.="</td>";
                 }
             $html.="<td>";
-            $html.="<a onclick='return confirm(\"آیا برای حذف مطمئن هستید ؟\")' class='btn btn-danger' href='".Url::createBackendUrl($this->url."delete.php?product_id=".$d['product_id'])."'
-            onclick>";
-            $html.="حذف</a> | ";
-            $html.="<a class='btn btn-info' href='".Url::createBackendUrl($this->url."update.php?product_id=".$d['product_id'])."'>";
-            $html.="ویرایش</a>";
+            $html.= $this->actions;
             $html.="</td>";
             $html.="</tr>";
         }
@@ -82,11 +87,10 @@ class Grid
         $html.="</table>";
         return $html;
     }
-    public function show(){
-//        $res = new Category();
-//        $data = ($res->select()->from($this->table)->all());
-        $model = new  product;
-        $data=$model->select()->leftJoin(["categories","categories.cat_id","products.product_category"])->all();
+
+    public function show($query){
+
+        $data =$query;
         $html=$this->makeData($data);
         echo $html;
     }
