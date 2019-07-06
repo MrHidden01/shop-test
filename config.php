@@ -26,7 +26,7 @@ define("hostName","127.0.0.1");
 define("dbname","shop");
 define("dbuser","root");
 define("dbpassword","");
-// end db
+// end db2
 define("base_url","http://" . $_SERVER['SERVER_NAME'] . "/shop/");
 define("base_dir",dirname(__FILE__)."/");
 include_once "autoloader.php";
